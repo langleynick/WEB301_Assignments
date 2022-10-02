@@ -10,6 +10,15 @@
     html, body {
         font-size: 12px;
     }
+    p {
+        width: 650px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1024px){
+    p {
+        width: 1000px;
+    }
 }
 html, body{
     margin: 0;
@@ -25,8 +34,4 @@ img{
 }
 .landscapeIMG {
     display: block;
-}
-p {
-    margin: 0 auto;
-    width: 80%;
 }
