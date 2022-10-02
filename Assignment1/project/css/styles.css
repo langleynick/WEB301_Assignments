@@ -5,6 +5,9 @@
     img.portraitIMG{
         display: block;
     }
+    div p {
+        display: none;
+    }
 }
 @media screen and (min-width:700px){
     html, body {
@@ -34,4 +37,7 @@ img{
 }
 .landscapeIMG {
     display: block;
+}
+#githubLink {
+    float: left;
 }
