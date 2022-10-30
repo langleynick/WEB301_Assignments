@@ -2,3 +2,35 @@ html, body{
     margin: 0;
     padding: 0;
 }
+#nav-bar{
+    display: none;
+}
+#mobile-nav-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mobile-nav-button > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 3px;
+    width: 60%;
+}
+#mobile-nav-button > div::before, #mobile-nav-button > div::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    background: black;
+    width: 100%;
+    height: 3px;
+}
+#mobile-nav-button > div::after{
+    top: 8px;
+}

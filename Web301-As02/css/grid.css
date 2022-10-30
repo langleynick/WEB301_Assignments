@@ -1,0 +1,59 @@
+/* Grid designs for the site */
+* {
+    box-sizing: border-box;
+}
+@media screen and (min-width: 600px){
+    [class*="col-"]{
+        float: left;
+        padding: 15px;
+        border: 1px solid black;
+        text-align: center;
+        box-sizing: border-box;
+        margin-left: 1%;
+    }
+    [class*="col-"]:first-child{
+        margin-left: 0;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        margin: 0 0 10px 0;
+    }
+    .col-1 { 
+        width: calc((100% - 11%) / 12);
+    }
+    .col-2 { 
+        width: calc(2 * ((100% - 11%) / 12) + (1 * 1%));
+    }
+    .col-3 { 
+        width: calc(3  * ((100% - 11%) / 12) + (2 * 1%));
+    }
+    .col-4 { 
+        width: calc(4 * ((100% - 11%) / 12) + (3 * 1%));
+    }
+    .col-5 { 
+        width: calc(5 * ((100% - 11%) / 12) + (4 * 1%));
+    }
+    .col-6 { 
+        width: calc(6 * ((100% - 11%) / 12) + (5 * 1%));
+    }
+    .col-7 { 
+        width: calc(7 * ((100% - 11%) / 12) + (6 * 1%));
+    }
+    .col-8 { 
+        width: calc(8 * ((100% - 11%) / 12) + (7 * 1%)); 
+    }
+    .col-9 { 
+        width: calc(9 * ((100% - 11%) / 12) + (8 * 1%));
+    }
+    .col-10 { 
+        width: calc(10 * ((100% - 11%) / 12) + (9 * 1%));
+    }
+    .col-11 { 
+        width: calc(11 * ((100% - 11%) / 12) + (10 * 1%));
+    }
+    .col-12 { 
+        width: 100%; 
+    }
+}
