@@ -2,11 +2,10 @@
 * {
     box-sizing: border-box;
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 599px){
     [class*="col-"]{
         float: left;
-        padding: 15px;
-        border: 1px solid black;
+        padding: 10px;
         text-align: center;
         box-sizing: border-box;
         margin-left: 1%;
