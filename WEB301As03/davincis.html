@@ -11,6 +11,7 @@ bootstrap.min.css" rel="stylesheet"
 integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 crossorigin="anonymous">
   <title>E-Business Analysis</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -45,11 +46,72 @@ crossorigin="anonymous">
   </header>
   <main>
     <!-- Content goes here -->
+    <div class="container-fluid">
+      <div class="row my-4">
+        <div class="col text-center">
+          <h1>Davinci's Pizza</h1>
+        </div>
+      </div>
+      <div class="row px-4">
+        <div class="accordion" id="davincis-accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header1">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#desktopView" aria-expanded="true" aria-controls="desktopView">
+                Desktop View
+              </button>
+            </h2>
+            <div id="desktopView" class="accordion-collapse collapse show" aria-labelledby="header1" data-bs-parent="davincis-accordion">
+              <p class="m-3 text-center">The desktop view of this site is clean, and has good spacing. Nothing is conflicting and everything is easy to find.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header2">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#mobileView" aria-expanded="true" aria-controls="mobileView">
+                Mobile View
+              </button>
+            </h2>
+            <div id="mobileView" class="accordion-collapse collapse" aria-labelledby="header2" data-bs-parent="davincis-accordion">
+              <p class="m-3 text-center">The movile view of this site is where problems start to happen: the image has items running into eachother and a hamburger icon appears, only to reveal the open hours displayed on the desktop view at the top.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header3">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#designTypeView" aria-expanded="true" aria-controls="designTypeView">
+                Design Type
+              </button>
+            </h2>
+            <div id="designTypeView" class="accordion-collapse collapse" aria-labelledby="header3" data-bs-parent="davincis-accordion">
+              <p class="m-3 text-center">This company is using a responsive design, the website changes as the window is being resized dynamically.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header4">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#imagesView" aria-expanded="true" aria-controls="imagesView">
+                Image Technologies
+              </button>
+            </h2>
+            <div id="imagesView" class="accordion-collapse collapse" aria-labelledby="header4" data-bs-parent="davincis-accordion">
+              <p class="m-3 text-center">No image responsive technologies are present.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="header5">
+              <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#opinionView" aria-expanded="true" aria-controls="opinionView">
+                My Opinion/My Suggestion
+              </button>
+            </h2>
+            <div id="opinionView" class="accordion-collapse collapse" aria-labelledby="header5" data-bs-parent="davincis-accordion">
+              <p class="m-3 text-center">I like the overall layout of the site, and I also appreciate its clean design. <br> However, I would change the hamburger icon to either display more links at the top or completely remove it to avoid confusion. <br> Note: On the mobile version, you can see the buttons on the hero image are running into the writing, and the focus of the image is off because they did not use a second image for mobile screens.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer class="py-3 my-4">
+  <footer class="fixed-bottom">
     <!-- Github link goes here -->
-    <div class="container bg-dark">
-      <a class="text-light" target="_blank" href="https://github.com/langleynick/WEB301_Assignments/tree/Assignment-3"> 2022- Github Repository</a>
+    <div class="container-fluid bg-dark p-4">
+      <a class="text-light" target="_blank" href="https://github.com/langleynick/WEB301_Assignments/tree/Assignment-3"> 2022 - Github Repository</a>
     </div>
   </footer>
   <script type="text/javascript" src="js/script.js"></script>
