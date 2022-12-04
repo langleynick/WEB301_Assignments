@@ -46,6 +46,115 @@ crossorigin="anonymous">
   </header>
   <main>
     <!-- Content goes here -->
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col m-4">
+          <h1>Windsor Salt</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 m-auto">
+          <div class="list-group lh-lg">
+              <button type="button" class="list-group-item list-group-item-action btn btn-dark py-3" data-bs-toggle="modal" data-bs-target="#desktopView">
+                Desktop View
+              </button>
+              <button type="button" class="list-group-item list-group-item-action btn btn-dark py-3" data-bs-toggle="modal" data-bs-target="#mobileView">
+                Mobile View
+              </button>
+              <button type="button" class="list-group-item list-group-item-action btn btn-dark py-3" data-bs-toggle="modal" data-bs-target="#designType">
+                Design Type
+              </button>
+              <button type="button" class="list-group-item list-group-item-action btn btn-dark py-3" data-bs-toggle="modal" data-bs-target="#imageTech">
+                Image Technologies
+              </button>
+              <button type="button" class="list-group-item list-group-item-action btn btn-dark py-3" data-bs-toggle="modal" data-bs-target="#myReview">
+                My Review
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="desktopView" tabindex="-1" aria-labelledby="desktopViewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="desktopViewLabel">Desktop View</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="p-3 h4">The desktop view of this site is great, while the font could be bigger the layout is good and the design is appealing.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="mobileView" tabindex="-1" aria-labelledby="mobileViewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="mobileViewLabel">Mobile View</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="p-3 h4">The mobile view is just as good, the spacing is still great and the menu is effective.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="designType" tabindex="-1" aria-labelledby="designTypeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="designTypeLabel">Design Type</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="p-3 h4">This company is using an adaptive design. The page changes at certain breakpoints.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="imageTech" tabindex="-1" aria-labelledby="imageTechLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="imageTechLabel">Image Technologies</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="p-3 h4">No image responsive technologies are present.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myReview" tabindex="-1" aria-labelledby="myReviewLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="myReviewLabel">My Review</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="p-3 h4">The overall layout is clean on mobile view, but there is a little too much space above the hero image at the top of the content.</p>
+            <p class="p-3 h4">I would change the hero image to have a better point of focus on the mobile view, and make it shorter so there isnt a large gap between the header and the image's text content</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="fixed-bottom">
     <!-- Github link goes here -->
