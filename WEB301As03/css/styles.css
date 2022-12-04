@@ -2,3 +2,5 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.bg-dark {background-color: #6c757d !important;}
+.btn-dark{background-color: #6c757d !important;}
