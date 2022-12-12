@@ -22,8 +22,69 @@
     </nav>
   </header>
   <main>
+    <div class="container-fluid w-75">
     <!-- Content goes here -->
-    <!-- TODO: Add form for validation -->
+      <h1 class="text-center mt-3"><b>User Information</b></h1>
+      <form class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName">
+          <div class="invalid-feedback">
+            Please enter your full name.
+          </div>
+          <label for="emailInput" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="emailInput">
+          <div class="invalid-feedback">
+            Please enter your full name.
+          </div>
+          <label for="businessName" class="form-label">Business Name</label>
+          <input type="text" class="form-control" id="businessName">
+        </div>
+        <div class="mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="profitOrNot" id="profit" value="Profit">
+            <label class="form-check-label" for="profit">
+              Profit
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="profitOrNot" id="nonProfit" value="NonProfit">
+            <label class="form-check-label" for="nonProfit">
+              Non-Profit
+            </label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <select class="form-select" id="select" aria-label="locationSelect">
+          </select>
+        </div>
+        <div class="mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="cleaning" id="cleaningCheck">
+            <label class="form-check-label" for="cleaningCheck">Cleaning Industry</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="entertainment" id="entertainmentCheck">
+            <label class="form-check-label" for="entertainmentCheck">Entertainment Industry</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="real estate" id="realEstateCheck">
+            <label class="form-check-label" for="realEstateCheck">Real Estate Industry</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="healthCare" id="healthCareCheck">
+            <label class="form-check-label" for="healthCareCheck">Health Care Industry</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="advertising" id="advertisingCheck">
+            <label class="form-check-label" for="advertisingCheck">Advertising Industry</label>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
   </main>
   <footer class="fixed-bottom">
     <!-- Github link goes here -->
