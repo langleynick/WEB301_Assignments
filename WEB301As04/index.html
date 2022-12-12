@@ -24,23 +24,32 @@
   <main>
     <div class="container-fluid w-75">
     <!-- Content goes here -->
-      <h1 class="text-center mt-3"><b>User Information</b></h1>
+      <h1 class="text-center bg-secondary text-light my-3 p-2"><b>User Information</b></h1>
       <form class="needs-validation" novalidate>
-        <div class="mb-3">
-          <label for="fullName" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="fullName">
-          <div class="invalid-feedback">
-            Please enter your full name.
+        <div class="row mb-3">
+          <div class="col">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName">
+            <div class="invalid-feedback">
+              Please enter your full name.
+            </div>
           </div>
-          <label for="emailInput" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="emailInput">
-          <div class="invalid-feedback">
-            Please enter your full name.
+          <div class="col">
+            <label for="emailInput" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="emailInput">
+            <div class="invalid-feedback">
+              Please enter your email address.
+            </div>
           </div>
-          <label for="businessName" class="form-label">Business Name</label>
-          <input type="text" class="form-control" id="businessName">
+          <div class="col">
+            <label for="businessName" class="form-label">Business Name</label>
+            <input type="text" class="form-control" id="businessName">
+            <div class="invalid-feedback">
+              Please enter your Business name.
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
+        <div class="row mb-3">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="profitOrNot" id="profit" value="Profit">
             <label class="form-check-label" for="profit">
@@ -53,12 +62,18 @@
               Non-Profit
             </label>
           </div>
+          <div class="invalid-feedback">
+            You must select one option.
+          </div>
         </div>
-        <div class="mb-3">
+        <div class="row mb-3">
           <select class="form-select" id="select" aria-label="locationSelect">
           </select>
+          <div class="invalid-feedback">
+            You must select a Province/Territory.
+          </div>
         </div>
-        <div class="mb-3">
+        <div class="row mb-3">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="cleaning" id="cleaningCheck">
             <label class="form-check-label" for="cleaningCheck">Cleaning Industry</label>
