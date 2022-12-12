@@ -29,21 +29,21 @@
         <div class="row mb-3">
           <div class="col">
             <label for="fullName" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="fullName">
+            <input type="text" class="form-control" id="fullName" required>
             <div class="invalid-feedback">
               Please enter your full name.
             </div>
           </div>
           <div class="col">
             <label for="emailInput" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="emailInput">
+            <input type="email" class="form-control" id="emailInput" required>
             <div class="invalid-feedback">
               Please enter your email address.
             </div>
           </div>
           <div class="col">
             <label for="businessName" class="form-label">Business Name</label>
-            <input type="text" class="form-control" id="businessName">
+            <input type="text" class="form-control" id="businessName" required>
             <div class="invalid-feedback">
               Please enter your Business name.
             </div>
@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="row mb-3">
-          <select class="form-select" id="select" aria-label="locationSelect">
+          <select class="form-select" id="select" aria-label="locationSelect" required>
           </select>
           <div class="invalid-feedback">
             You must select a Province/Territory.
@@ -99,6 +99,19 @@
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
       </form>
+    </div>
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+          <div class="modal-header">
+            <h5 class="modal-title"><i>Congratulations!</i></h5>
+          </div>
+          <div class="modal-body">
+            <p>Your form has been submitted successfully.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
     </div>
   </main>
   <footer class="fixed-bottom">
